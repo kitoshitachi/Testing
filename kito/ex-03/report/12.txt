@@ -1,0 +1,19 @@
+Function 'main'
+Lines executed:90.00% of 10
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:80.00% of 5
+
+Function 'tinhHeSoXepLoaiHocBong'
+Lines executed:12.50% of 24
+Branches executed:7.69% of 26
+Taken at least once:3.85% of 26
+No calls
+
+File 'ex_03.c'
+Lines executed:35.29% of 34
+Branches executed:14.29% of 28
+Taken at least once:7.14% of 28
+Calls executed:80.00% of 5
+Creating 'ex_03.c.gcov'
+

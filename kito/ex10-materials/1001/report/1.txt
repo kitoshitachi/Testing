@@ -1,0 +1,25 @@
+Function 'main'
+Lines executed:25.00% of 20
+Branches executed:20.00% of 10
+Taken at least once:10.00% of 10
+Calls executed:18.18% of 11
+
+Function 'selection_sort'
+Lines executed:0.00% of 8
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 1
+
+Function 'get_min_position'
+Lines executed:0.00% of 6
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+No calls
+
+File 'sample1001.c'
+Lines executed:14.71% of 34
+Branches executed:11.11% of 18
+Taken at least once:5.56% of 18
+Calls executed:16.67% of 12
+Creating 'sample1001.c.gcov'
+

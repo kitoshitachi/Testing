@@ -1,0 +1,81 @@
+        -:    0:Source:sample1202.c
+        -:    0:Graph:sample1202.gcno
+        -:    0:Data:sample1202.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:
+function find_max called 9 returned 100% blocks executed 100%
+        9:    4:int find_max(int a[], int n){
+        9:    5:  int max = 0;
+        -:    6:  int i;
+       54:    7:  for ( i = 1; i < n; i++ ){
+branch  0 taken 45
+branch  1 taken 9 (fallthrough)
+       45:    8:    if ( a[i] > a[max] ){
+branch  0 taken 20 (fallthrough)
+branch  1 taken 25
+       20:    9:      max = i;
+        -:   10:    }
+        -:   11:  }
+        -:   12:
+        9:   13:  return max;
+        -:   14:}
+        -:   15:
+function selection_sort called 1 returned 100% blocks executed 100%
+        1:   16:void selection_sort(int a[], int n){
+        -:   17:  int i, tmp, max;
+        -:   18:
+       10:   19:  for( i = 0; i < n-1; i++ ){
+branch  0 taken 9
+branch  1 taken 1 (fallthrough)
+        9:   20:    max = find_max(a, n-i);
+call    0 returned 9
+        9:   21:    tmp = a[max];
+        9:   22:    a[max] = a[n-1-i];
+        9:   23:    a[n-1-i] = tmp;
+        -:   24:  }
+        1:   25:}
+        -:   26:
+function main called 1 returned 100% blocks executed 100%
+        1:   27:int main(int argc, char* argv[]){
+        1:   28:  int N = atoi(argv[1]);
+call    0 returned 1
+        -:   29:  int i;
+        1:   30:  int* a = (int*)calloc(N, sizeof(int));
+        -:   31:  int n;
+        -:   32:
+       11:   33:  for( i = 0; i < N; i++ ){
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:   34:    a[i] = N - i;
+        -:   35:  }
+        -:   36:
+        1:   37:  printf("before: ");
+call    0 returned 1
+       11:   38:  for ( i = 0; i < N; i++ ){
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:   39:    printf("%d ", a[i]);
+call    0 returned 10
+        -:   40:  }
+        1:   41:  printf("\n");
+call    0 returned 1
+        -:   42:
+        1:   43:  selection_sort(a,N);
+call    0 returned 1
+        -:   44:
+        1:   45:  printf("after: ");
+call    0 returned 1
+       11:   46:  for ( i = 0; i < N; i++ ){
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:   47:    printf("%d ", a[i]);
+call    0 returned 10
+        -:   48:  }
+        1:   49:  printf("\n");
+call    0 returned 1
+        -:   50:
+        1:   51:  return 0;
+        -:   52:}

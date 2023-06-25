@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.js": "javascript",
+        "*.html": "html",
+        "*.cpp": "cmake",
+        "*.md": "latex",
+        "stdlib.h": "c",
+        "homework_run_test.h": "c"
+    }
+}

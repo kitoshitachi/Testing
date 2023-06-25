@@ -1,0 +1,95 @@
+        -:    0:Source:ex_03.c
+        -:    0:Graph:ex_03.gcno
+        -:    0:Data:ex_03.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    0:Source is newer than graph
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:
+function tinhHeSoXepLoaiHocBong called 1 returned 100% blocks executed 12%
+        1:    4:float tinhHeSoXepLoaiHocBong(double diemMH[], int soMH, int diemRL){
+        1:    5:    if(soMH > 0){
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        -:    6:        //tinh tong diem
+    #####:    7:        double tongDiem = 0;
+    #####:    8:        for(int i = 0; i < soMH; ++i)
+branch  0 never executed
+branch  1 never executed
+    #####:    9:            tongDiem += diemMH[i];
+        -:   10:        
+        -:   11:        //tinh diem tb
+    #####:   12:        double diemTB = tongDiem / soMH;
+        -:   13:
+        -:   14:        // xep loai hb
+    #####:   15:        double heSo = 0;
+        -:   16:
+    #####:   17:        if (diemTB >= 9){
+branch  0 never executed
+branch  1 never executed
+    #####:   18:            if (diemRL >= 90)
+branch  0 never executed
+branch  1 never executed
+    #####:   19:                heSo = 1.2;
+    #####:   20:            else if (diemRL >= 80)
+branch  0 never executed
+branch  1 never executed
+    #####:   21:                heSo = 1.1;
+    #####:   22:            else if (diemRL >= 65)
+branch  0 never executed
+branch  1 never executed
+    #####:   23:                heSo = 1.0;
+        -:   24:        }
+    #####:   25:        else if ((diemTB >= 8 && diemTB < 9)){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:   26:            if (diemRL >= 80)
+branch  0 never executed
+branch  1 never executed
+    #####:   27:                heSo = 1.1;
+    #####:   28:            else if (diemRL >= 65)
+branch  0 never executed
+branch  1 never executed
+    #####:   29:                heSo = 1.0;
+        -:   30:        }
+    #####:   31:        else if ((diemTB >= 7 && diemTB < 8)){
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:   32:            if (diemRL >= 65)
+branch  0 never executed
+branch  1 never executed
+    #####:   33:                heSo = 1.0;
+        -:   34:        }
+        -:   35:        
+    #####:   36:        return heSo;
+        -:   37:    }
+        -:   38:
+        1:   39:    return -1;
+        -:   40:}
+        -:   41:
+        -:   42:
+function main called 1 returned 100% blocks executed 80%
+        1:   43:int main(void){
+        1:   44:    int soMH = 4, i;
+        1:   45:    scanf("%d",&soMH);
+call    0 returned 1
+        1:   46:    double *diemMH = (double*)malloc(soMH * sizeof(double));
+        1:   47:    for(i = 0; i < soMH; ++i)
+branch  0 taken 0
+branch  1 taken 1 (fallthrough)
+    #####:   48:        scanf("%f",&diemMH[i]);
+call    0 never executed
+        1:   49:    int diemRL = 4;
+        1:   50:    scanf("%d",&diemRL);
+call    0 returned 1
+        -:   51:
+        1:   52:    printf("%.2f",tinhHeSoXepLoaiHocBong(diemMH, soMH, diemRL));
+call    0 returned 1
+call    1 returned 1
+        1:   53:    return 0;
+        -:   54:}

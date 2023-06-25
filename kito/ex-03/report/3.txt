@@ -1,13 +1,19 @@
-File 'ex_03.cpp'
-Lines executed:70.59% of 34
-Branches executed:81.82% of 44
-Taken at least once:52.27% of 44
-Calls executed:87.50% of 8
-Creating 'ex_03.cpp.gcov'
+Function 'main'
+Lines executed:100.00% of 10
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 5
 
-File 'c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/iostream'
-Lines executed:100.00% of 1
-No branches
-Calls executed:100.00% of 3
-Creating 'iostream.gcov'
+Function 'tinhHeSoXepLoaiHocBong'
+Lines executed:54.17% of 24
+Branches executed:53.85% of 26
+Taken at least once:30.77% of 26
+No calls
+
+File 'ex_03.c'
+Lines executed:67.65% of 34
+Branches executed:57.14% of 28
+Taken at least once:35.71% of 28
+Calls executed:100.00% of 5
+Creating 'ex_03.c.gcov'
 
